@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Website</title>
+    <!--Link do Css-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!--Link do Fontawesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--Link do Jquery-->
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <!--Função Javascript-->
+    <script>
+        $(document).ready(function(){
+            $('#baricone').click(function(){
+                $('ul').toggleClass('mostrar');
+            });
+        });
+    </script>
+    <script src="JS/main.js"></script>
+
+</head>
+<body onload="carregamento()">
+    
+    <header>
+
+        <nav class="nav">
+            <label class="logo ">CodeSchool</label>
+            <ul class="ul">
+                <li class="li"><a class="ativo a">Home</a></li>
+                <li class="li"><a class="a" href="entrar.html">Entrar</a></li>
+                <li class="li"><a class="a" href="sobre.html">Sobre</a></li>
+                <li class="li"><a class="a" href="#">Contato</a></li>
+            </ul>
+
+            <label id="baricone">
+                <i class="fa fa-bars"></i>
+            </label>
+
+         </nav>
+    </header>
+
+    <main>
+        
+        <section class="sec1">
+            <p class="p p1">Aprenda a programar,criar designs para web sites e muito mais</p>
+            <p class="p p2">Cadastre-se, e inicie essa jornada com a gente!</p>
+
+            <div id="bannerdiv">
+                <img id="banner" src="Imagens/program.jpg">
+            </div>
+
+        </section>
+
+        <section class="sec2">
+            
+            <article class="art art1">
+                <h3>Designs Responsivos <br><br>A Responsividade é um fator importante no desenvolvimento de sites e aplicações,ajustar o layout do site ao tamanho das telas, é importante para melhorar a experiência do usuário.</h3>
+
+                <a><button id="btna">Acessar</button></a>
+            </article>
+
+            <article class="art art2"><img id="imgresponsivo" src="Imagens/responsive.png" alt=""></article>
+
+        </section>
+
+        <section class="sec3">
+
+            <h2 id="ling">Conteúdo de Programação</h2>
+
+            <div class="content">
+                <div class="card">
+                    <h2 class="titulocard">Criação de Projetos</h2>
+                    <span class="span">Aprenda a construir sites e aplicativos</span>
+                    <br>
+                    <img class="imgcard" src="Imagens/projetos.png" alt="">
+                    <br><br>
+                    <button class="btncard">Acessar</button>
+                    </div>
+
+                    <div class="card">
+                        <h2 class="titulocard">Linguagens de Programação</h2>
+                        <span class="span">Linguagens para construção de sistemas</span>
+                        <br>
+                        <img class="imgcard" src="Imagens/banner.png" alt="">
+                        <br><br>
+                        <button class="btncard">Acessar</button><!--Imagem div-->
+                        </div>
+
+                    <div class="card">
+                        <h2 class="titulocard">Marketing Digital</h2>
+                        <span class="span">Técnicas de marketing para seus projetos</span>
+                        <br>
+                        <img class="imgcard" src="Imagens/marketingdigital.jpg" alt="">
+                        <br><br>
+                        <button class="btncard">Acessar</button><!--Imagem div-->
+                        </div>   
+            </div>
+
+            <section class="secnoticias">
+
+                <h2 class="textonoticias">Receba As Novidades Da Plataforma</h2>
+                    <p class="textonoticias">cursos, eventos e muito mais</p>
+                    
+                <form>
+                        <input class="email"type="email" placeholder="Digite seu E-mail" maxlength="50" minlength="10" required>
+                        <br>
+                        <input class="enviar" type="submit">    
+                </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="sec4">
+
+            <div class="divfooter1" id="divfooter1">              
+                   
+                <h1 class="footertitulo">Sobre a Plataforma</h1>
+                <p class="footertexto1">A plataforma CV, oferece cursos gratuitos de programação e tecnologia para desenvolvimento pessoal e profissional dos alunos assinantes. Com aulas intuítivas e de fácil aprendizado, visando sempre auxiliar no crescimento do conhecimento técnico.</p>
+               
+                <ul class="social-media">
+                    <li class="social-icons"><a href="https://www.facebook.com/mickael.fernandes.7334" target="blanck"><i class="fa fa-facebook icon"></i></a></li>
+                    <li class="social-icons"><a href="#"><i class="fa fa-twitter icon"></i></a></li>
+                    <li class="social-icons"><a href="https://www.linkedin.com/in/mickael-fernandes-bispo-de-souza-8ab2b01b8/ " target="blanck"><i class="fa fa-linkedin icon"></i></a></li>
+                    <li class="social-icons"><a href="https://github.com/MickaelFernandes7" target="blanck"><i class="fa fa-github icon"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="divfooter2">
+                
+                <ol>
+                    <li><i class="fa fa-envelope icon2"></i><a class="a2" href="mailto:mickaelbpsouza@gmail.com">cvcorporation@outlook.com</a></i></li>
+                    <li><i class="fa fa-phone icon2"><a class="a2">11 98384-5223</a></i></li>
+                </ol>
+
+            </div>
+
+        </section>
+    </footer>
+    
+</body>
+</html>

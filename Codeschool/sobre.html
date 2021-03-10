@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Website</title>
+    <!--Link do Css-->
+    <link rel="stylesheet" href="CSS/sobre.css">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!--Link do Fontawesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--Link do Jquery-->
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <!--Função Javascript-->
+    <script>
+        $(document).ready(function(){
+            $('#baricone').click(function(){
+                $('ul').toggleClass('mostrar');
+            });
+        });
+    </script>
+    <script src="JS/main.js"></script>
+</head>
+
+<body onload="carregamentosobre()">
+    
+    <header>
+
+        <nav class="nav">
+            <label class="logo ">CodeSchool</label>
+            <ul class="ul">
+                <li class="li"><a class="a" href="index.html">Home</a></li>
+                <li class="li"><a class="a" href="entrar.html">Entrar</a></li>
+                <li class="li"><a class="ativo a">Sobre</a></li>
+                <li class="li"><a class="a" href="#">Contato</a></li>
+            </ul>
+
+            <label id="baricone">
+                <i class="fa fa-bars"></i>
+            </label>
+
+         </nav>
+    </header>
+
+    <main>
+        <section>
+            <img id="equipeimg" src="Imagens/equipe.jpg" alt="">
+        </section>
+
+        <article class="arttexto">
+            <h1>Sobre Nós</h1>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis obcaecati nesciunt quia inventore soluta odit aspernatur, commodi officiis quaerat harum, minima placeat nulla dignissimos nisi saepe nostrum atque ipsum at!
+                <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga animi numquam ab facilis in veniam itaque consequatur nemo ea? Velit et neque quisquam, enim sequi deserunt autem esse quo?
+                <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis minima accusamus fugit repudiandae maiores beatae quam expedita dicta recusandae voluptas ullam exercitationem autem velit facere quaerat quisquam pariatur est!
+            </p>
+        </article>
+
+
+        <section class="secequipe">
+
+            <h2 class="equipe">Equipe de Desenvolvimento</h2>
+        
+            <section class="content">
+                <div class="team-area">
+                    <div class="single-team">
+                        <img src="Imagens/Mika.jpeg" alt="">
+                        <div class="team-text">
+                            <h2><b>Mickael Fernandes</b></h2>
+                            <p>Desenvolvedor Full Stack</p>
+                            <p>
+                                <a href="https://www.linkedin.com/in/mickael-fernandes-bispo-de-souza-8ab2b01b8/" target="blanck"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://github.com/MickaelFernandes7" target="blanck"><i class="fa fa-github"></i></a>
+                                <a href="https://www.instagram.com/mr.mickael7/" target="blanck"><i class="fa fa-instagram"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="single-team">
+                        <img src="Imagens/Juan.jpeg" alt="">
+                        <div class="team-text">
+                            <h2>Juan Soares</h2>
+                            <p>Desenvolvedor Front-End</p>
+                            <p>
+                                <a><i class="fa fa-linkedin"></i></a>
+                                <a><i class="fa fa-github"></i></a>
+                                <a><i class="fa fa-instagram"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="single-team">
+                        <img src="Imagens/Beca.jpeg" alt="">
+                        <div class="team-text">
+                            <h2>Rebeca Moraes</h2>
+                            <p>Scrum Master</p>
+                            <p>
+                                <a><i class="fa fa-linkedin"></i></a>
+                                <a><i class="fa fa-github"></i></a>
+                                <a><i class="fa fa-instagram"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>    
+            
+            </section>
+
+    </main>
+
+    <footer>
+        <section class="sec4">
+
+            <div class="divfooter1" id="divfooter1">              
+                   
+                <h1 class="footertitulo">Sobre a Plataforma</h1>
+                <p class="footertexto1">A plataforma CV, oferece cursos gratuitos de programação e tecnologia para desenvolvimento pessoal e profissional dos alunos assinantes. Com aulas intuítivas e de fácil aprendizado, visando sempre auxiliar no crescimento do conhecimento técnico.</p>
+               
+                <ul class="social-media">
+                    <li class="social-icons"><a href="https://www.facebook.com/mickael.fernandes.7334" target="blanck"><i class="fa fa-facebook icon"></i></a></li>
+                    <li class="social-icons"><a href="#"><i class="fa fa-twitter icon"></i></a></li>
+                    <li class="social-icons"><a href="https://www.linkedin.com/in/mickael-fernandes-bispo-de-souza-8ab2b01b8/ " target="blanck"><i class="fa fa-linkedin icon"></i></a></li>
+                    <li class="social-icons"><a href="https://github.com/MickaelFernandes7" target="blanck"><i class="fa fa-github icon"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="divfooter2">
+                
+                <ol>
+                    <li><i class="fa fa-envelope icon2"></i><a class="a2" href="mailto:mickaelbpsouza@gmail.com">cvcorporation@outlook.com</a></i></li>
+                    <li><i class="fa fa-phone icon2"><a class="a2">11 98384-5223</a></i></li>
+                </ol>
+
+            </div>
+
+        </section>
+    </footer>
+    
+</body>
+</html>

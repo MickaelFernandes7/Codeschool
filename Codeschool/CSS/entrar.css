@@ -1,0 +1,115 @@
+    *{margin: 0; padding: 0; box-sizing:border-box; text-decoration: none;}
+
+
+    /*Códigos tela de Login*/
+    body{background-color: #F8F8FF;}
+    .div-form input{display: block;
+    height: 55px;
+    width: 450px;
+    margin: 25px 95px 10px;
+    border-radius: 15px;
+    border:1px solid #000;
+    padding: 10px 20px;
+    font-size:16pt;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;}
+
+    .div-form input[type=submit]{background-color: #F8F8FF; 
+    color: #000; 
+    font-size: 25px; 
+    border: none; 
+    cursor: pointer;}
+
+    .div-form input[type=submit]:hover{background-color: #fff; 
+    color: #78d1fd; 
+    transition: 1s;}
+
+    .div-form h1{font-family:Arial, sans-serif; 
+    text-align:center; 
+    padding:18px;}
+
+    .div-form{background-color:#78d1fd; 
+    color: #fff; 
+    width: 620px;
+    height: 420px; 
+    margin: 150px auto 0px auto; 
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;}
+
+
+    .div-form-cadastro h1{font-family:Arial, sans-serif; 
+        text-align:center; 
+        padding:18px;}
+            
+    .div-form-cadastro{background-color:#78d1fd; 
+        color: #fff; 
+        width: 640px;
+        height: 420px; 
+        margin: 150px auto 0px auto; 
+        border-bottom-right-radius:10px;
+        border-top-left-radius:10px;}
+
+    .div-form-cadastro input{display: block;
+            height: 45px;
+            width: 400px;
+            margin: 10px 105px 10px;
+            border-radius: 15px;
+            border:1px solid #000;
+            padding: 10px 20px;
+            font-size:16pt;
+            background-color: #fff;
+            outline: none;
+            cursor: pointer;}
+        
+    .div-form-cadastro input[type=submit]{background-color: #F8F8FF; 
+            color: #000; 
+            font-size: 25px; 
+            border: none; 
+            cursor: pointer;}
+        
+    .div-form-cadastro input[type=submit]:hover{background-color: #fff; 
+            color: #78d1fd; 
+            transition: 1s;}
+        
+
+    a{color: #fff; 
+    text-align: center; 
+    display: block; 
+    margin-top: 20px; 
+    font-size: 20px;}
+
+    a:hover{text-decoration: underline;}
+    /*Mudança do texto do placeholder do input*/
+    ::-webkit-input-placeholder{color:black;}
+
+/*--------------------------------------------------------------------------------*/
+
+    @media(max-width:321px){
+        .div-form, .div-form-cadastro{background-color:#78d1fd; 
+            color: #fff; 
+            width: 100%;
+            margin: 0px auto 0px auto;
+            height: 570px;  
+            border-bottom-right-radius:10px;
+            border-top-left-radius:10px;}
+     
+            .div-form h1, .div-form-cadastro h1{font-family:Arial, sans-serif; 
+                text-align:center; 
+                padding:40px 18px;}
+
+            .div-form input, .div-form-cadastro input{display: block;
+                height: 45px;
+                width: 300px;
+                margin: 17px 10px;
+                border-radius: 15px;
+                border:1px solid #000;
+                padding: 10px 20px;
+                font-size:16pt;
+                background-color: #fff;
+                outline: none;
+                cursor: pointer;}
+            
+            .div-form a{padding-top: 30px;}
+            
+    }

@@ -1,0 +1,360 @@
+    *{margin:0; padding:0; box-sizing:border-box; list-style:none; text-decoration:none;}
+
+        /*Header do site*/
+        header{width: 100%; 
+            background: #78d1fd;}
+        
+        /*Menu de navegação do site*/
+        .nav{height:80px; 
+            width: 100%; 
+            background: #78d1fd;}
+        
+        /*Logo Menu*/
+        .logo{font-size: 35px; 
+            font-weight:bold; 
+            color: #fff; 
+            padding: 0 100px; 
+            line-height:80px}
+        
+        /*Lista não ordenada do menu*/
+        .nav .ul {float: right;
+             margin-right:40px;}
+        
+        /*Configuração das LI´s da lista não ordenada*/
+        .nav .li{display: inline-block; 
+            margin: 0 8px; 
+            line-height: 80px;}
+        
+        /*Configuração das âncoras da lista não ordenada*/
+        .nav .a{color: #fff; 
+            font-size:20px; 
+            text-transform: uppercase; 
+            border: 1px solid transparent;
+            border-radius: 3px; 
+            padding: 7px 10px;}
+        
+        /*Efeito Hover das âncoras da lista não ordenada*/
+        .a.ativo,.a:hover{border: 1px solid white; 
+            transition: 1.5s;}
+        
+        /*Icone Hamburguer de Menu*/
+        .nav #baricone{color: #fff; 
+            font-size:30px; 
+            line-height: 80px; 
+            float: right; 
+            margin-right: 40px; 
+            cursor:pointer; 
+            display: none;}
+        
+        @media (max-width: 1045px){
+            /*Mudança nas proporções da Logo do Site*/
+            .logo{font-size: 32px; padding-left: 60px; }
+        
+            /*Alteração no margin da lista não ordenada*/
+            .nav .ul{margin-right:20px;}
+        
+            /*Alteração na ancora da lista não ordenada*/
+            .nav .a{font-size: 17px;}
+        }
+        
+        @media (max-width: 909px){    
+            
+            /*Faz o ícone hamburguer aparecer*/
+            .nav #baricone{display: block;}
+            /*Alteração na lista não ordenada*/
+            .nav .ul{position: fixed; 
+                width: 100%; 
+                height: 100vh; 
+                background: #78d1fd; 
+                top: 80px; 
+                left: -100%; 
+                text-align: center; 
+                transition: all .5s;}
+
+            /*Faz as LI´s da lista não ordenada aparecerem, e alterações nas LI´s*/
+            .nav .li{display: block; 
+                margin: 50px 0; 
+                line-height: 30px;}
+        
+            /*Alteração na ancora da lista não ordenada*/
+            .nav .a{font-size: 20px;}
+        
+            /*Alteração na ancora da lista não ordenada*/
+            .a.ativo, .a:hover{border:solid 1px #fff; color:snow;}
+            
+            /*Faz o efeito para mostrar o menu responsivo*/
+            .nav .ul.mostrar{left:0;}
+        }
+
+        /*Main do Site*/
+
+        main{background-color: #F8F8FF; 
+            height: 2100px;}
+    
+        #equipeimg{width: 100%; 
+            height: 55%;}
+    
+        .arttexto{width: 100%; 
+            height: 450px; 
+            background-color: #78d1fd; 
+            padding-top: 3%;}
+
+        .arttexto > h1{color: #fff; 
+            font-size: 55px; 
+            margin-left:20px; 
+            margin-bottom:15px;}
+    
+        .arttexto > p{color: #fff; 
+            font-size: 30px; 
+            margin-left: 20px;}
+
+        .equipe{ color: #1E90FF; 
+            font-size: 50px;
+            padding-left: 20px; 
+            padding-top: 7%; 
+            background-color: #F8F8FF;}
+    
+        /*Section - Contem as Imagens da equipe*/
+        .content{display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        background: #F8F8FF; 
+        width: 100%; 
+        height: 750px;}
+    
+        .team-area{display: flex; 
+        width: 90%; 
+        justify-content: space-around;}
+
+        .single-team{width: 360px; 
+        height: 400px; 
+        padding: 24px; 
+        background: #fff; 
+        position: relative; 
+        display: flex; 
+        align-items: flex-end; 
+        transition: .6 ease-out; 
+        box-shadow: 0 5px 0 5px #fff;}
+
+        .single-team:hover{transform: translateY(15px);}
+
+        .single-team:hover::before{opacity: 1;}
+
+        .single-team:hover .team-text{opacity: 1; transform: translateY(0);}
+
+        .single-team:before{content: ''; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        display: block; 
+        width: 100%; 
+        height: 100%; 
+        background: linear-gradient(to top, #000, transparent); 
+        z-index: 2; 
+        transition: 0.5s; 
+        opacity: 0;}
+
+        .single-team img{width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        object-fit: cover;}
+
+        .single-team .team-text{position: relative; 
+        z-index: 3; 
+        color: #fff; 
+        opacity: 0; 
+        transform: translateY(60px); 
+        transition: 0.5s;}
+
+        .team-text{margin: 0; 
+        letter-spacing: 1.5px;}
+
+        .team-text p{letter-spacing: 1px; 
+        margin-top: 5px; 
+        margin-bottom: 10px;
+        font-size: 15px; 
+        font-family: Verdana, sans-serif;}
+
+        .team-text a{width: 30px; 
+        height: 30px; display: inline-block; 
+        border: 1px solid #fff; 
+        border-radius: 50%; 
+        margin: 0 5px;
+        cursor: pointer;}
+
+        .team-text a:hover{background-color: #1E90FF; transition: 1s;}
+        .team-text a i{color: #fff; 
+        padding: 6px 7.5px;}
+
+        /*Footer Site*/
+        footer{width:100%; 
+        height: 310px;
+        background-color: #78d1fd;
+    }
+
+        .sec4{display: flex; 
+        justify-content: space-around; 
+        flex-direction: row-reverse; 
+        margin-top: 1.5%;}
+
+        /*Div dos textos e dos ícones*/
+        .divfooter1{width: 800px; 
+        height:285px; 
+        color: #fff;
+        margin-top: 1.5%;}
+
+        /*Título do sobre do Footer*/
+        .footertitulo{font-size: 30px;
+        padding-top: 2%; 
+        padding-left:2%;}
+    
+        /*Texto do Sobre do Footer*/
+        .footertexto1{font-size: 23.5px; 
+        padding-top: 1%; 
+        padding-left:1.5%;}
+
+        /*Estilização dos Ícones das Redes Sociais*/
+        .social-media{font-size:35px;  
+        margin-left: 2%; 
+        margin-top: 2.5%; 
+        display: flex;}
+
+        /*Caixa dos Ícones*/
+        .icon{padding-top: 10px; 
+        border:#fff solid 1px; 
+        border-radius: 5px; 
+        text-align:center;
+        margin-right: 17px; 
+        width: 55px; 
+        height: 55px;
+        color: #fff;}
+
+        .icon:hover{color: #F5F5F5; 
+        background-color: royalblue; 
+        transition: 1.2s; 
+        border:#fff;}
+    
+
+        /*Div2 footer*/
+        .divfooter2{width: 400px; 
+        height: 300px; 
+        font-size: 35px; 
+        padding-top: 5%; 
+        padding-left:2%;}
+
+    
+        .sec5{width: 100px; 
+        height: 100px;}
+
+        /*Icones de email e telefone*/
+        .icon2{color: #fff; margin-top: 20px;}
+    
+        /*E-mail e Telefone Textos*/
+        .a2{font-size: 25px; 
+        color:#fff; 
+        margin-left: 10px; 
+        cursor: pointer;}
+
+        .a2:hover{color: royalblue; 
+        transition:0.5s;}
+
+    @media (max-width:321px){
+        /*Menu de navegação*/
+        .nav{display: flex;justify-content: space-around;}
+        /*Faz o ícone hamburguer aparecer*/
+        .nav #baricone{display: block; 
+         font-size:20px;   
+         cursor:pointer;
+         color: #fff;
+         padding-right: 15px;}  
+         
+         #equipeimg{width: 100%; height: 90%;}
+    
+         .arttexto{width: 100%; 
+            height: 570px; 
+            background-color: #78d1fd; 
+            padding-top: 3%;}
+ 
+         .arttexto > h1{color: #fff; 
+            font-size: 30px; 
+            margin-left:20px; 
+            margin-bottom:15px;}
+     
+         .arttexto > p{color: #fff; 
+            font-size: 20px; 
+            margin-left: 20px;}
+ 
+         .equipe{ color: #1E90FF; 
+            font-size: 30px; 
+            padding-left: 11.5px; 
+            padding-top: 7%; 
+            background-color: #F8F8FF; 
+            margin-bottom: 50%;}
+       
+        .secequipe{background-color: #F8F8FF; height: 1000px;}
+        /*Elemento pai das flexboxes*/
+         .content{display: flex; 
+            background: #F8F8FF;
+            width: 100%; 
+            height: 900px;}
+        
+        /*Espaço em que as flexboxes estão inseridas*/
+        .team-area{display: flex; 
+            width: 70%; 
+            flex-flow: column wrap; 
+            justify-content: space-around;
+            margin-right: 20%;}
+
+        /*Flexbox*/
+        .single-team{width: 285px; 
+            height: 320px; 
+            background: #fff; 
+            position: relative;
+            margin-bottom: 65px;
+            margin-right: 10%; 
+            display: flex;  
+            transition: .6 ease-out; 
+            box-shadow: 0 5px 0 5px #fff;
+            object-fit: cover;}
+
+        /*Imagem da Flexbox*/
+        .single-team img{width: 100%; 
+            height: 100%; 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            object-fit: cover;}
+        
+
+            footer{width:100%; 
+                height: 450px;
+                background-color: #78d1fd;}
+        
+            .sec4{display: flex;
+                width:100%;
+                height: 410px;  
+                background-color:#78d1fd;}
+        
+            /*Div dos textos e dos ícones*/
+            .divfooter1{width: 100%; 
+                height:400px; 
+                color: #fff;
+                border-radius: 10px;
+                margin-top: 5%;
+                background-color: #78d1fd;}
+        
+            /*Título do sobre do Footer*/
+            .footertitulo{font-size: 30px;
+                padding-top: 4%; 
+                padding-left:2%;}
+            
+            /*Texto do Sobre do Footer*/
+            .footertexto1{font-size: 25px; 
+                padding-top: 3%; 
+                padding-left:1.5%;
+                font-family: 'Roboto';}
+
+            .divfooter2{display: none;}
+         }
